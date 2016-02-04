@@ -73,4 +73,4 @@ Released under an MIT license.
 ### Other Libs
 
 - [Memoizerific](https://github.com/thinkloop/memoizerific): Fastest, smallest, most-efficient JavaScript memoization lib to memoize JS functions.
-- [Multi Key Cache](https://github.com/thinkloop/multi-key-cache): A JavaScript (JS) cache that can have multiple complex values as keys.
+- [Map or Similar](https://github.com/thinkloop/map-or-similar): A JavaScript (JS) Map or Similar object polyfill if Map is not available.
