@@ -213,7 +213,7 @@ MultiKeyCache.prototype.values = function() {
 		values = [];
 
 	function getCacheValues(currentCache) {
-		currentCache.forEach((val, key) => {
+		currentCache.forEach(function(val, key) {
 			if (key === self._vAl_kEY_nAMe_no_cOLLision_) {
 				values.push(val);
 			}
@@ -232,7 +232,7 @@ MultiKeyCache.prototype.keyNodes = function() {
 	var keys = [];
 
 	function getCacheKeys(currentCache) {
-		currentCache.forEach((val, key) => {
+		currentCache.forEach(function(val, key) {
 			keys.push(key);
 			if (val && val.size) {
 				getCacheKeys(val);

@@ -29,11 +29,11 @@
     "test:map": "TEST_MAPORSIMILAR=false JASMINE_CONFIG_PATH=jasmine.json jasmine",
     "test:similar": "TEST_MAPORSIMILAR=true JASMINE_CONFIG_PATH=jasmine.json jasmine",
     "prebuild": "npm run -s test",
-    "build": "npm -s run build:browserify | tee multi-key-cache.js | npm -s run build:minify | tee multi-key-cache.min.js | npm -s run build:gzip > multi-key-cache.min.gzip.js",
+    "build": "npm run -s build:browserify | tee multi-key-cache.js | npm run -s build:minify | tee multi-key-cache.min.js | npm run -s build:gzip > multi-key-cache.min.gzip.js",
     "build:browserify": "browserify src/multi-key-cache.js --detectGlobals false --standalone multi-key-cache | derequire",
     "build:minify": "uglifyjs --compress drop_console,unused=false --mangle --screw-ie8",
     "build:gzip": "gzip --best -v -c",
-    "prepublish": "npm run build && git add --all && git commit -m 'build & publish' && npm version patch && git push && git push --tags"
+    "prepublish": "npm run -s build && git add --all && git commit -m 'build & publish' && npm version patch && git push && git push --tags"
   },
   "dependencies": {
     "map-or-similar": "^1.1.3"
