@@ -1,6 +1,6 @@
 {
   "name": "multi-key-cache",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A JavaScript (JS) cache that can have multiple complex values as keys",
   "license": "MIT",
   "author": "@thinkloop",
